@@ -56,7 +56,7 @@ const white = allWhite.reduce((acc, val) => {
 }, 0) / allWhite.length;
 
 return {
-    red, green, blue, white
+    r: red, g: green, b: blue, w: white
     }
 }
 
@@ -67,4 +67,36 @@ console.log(img.width)
 // console.log('green', green);
 // console.log('blue', blue);
 // console.log('white', white);
+
+const imgAnalysis = {
+  overall: { r: red, g: green, b: blue, w: white },
+  areas: [{
+    r: area1.red, g: area1.green, b: area1.blue, w: area1.white
+  },
+  {
+    r: area2.red, g: area2.green, b: area2.blue, w: area2.white
+  },
+  {
+    r: area3.red, g: area3.green, b: area3.blue, w: area3.white
+  },
+  {
+    r: area4.red, g: area4.green, b: area4.blue, w: area4.white
+  },
+  {
+    r: area5.red, g: area5.green, b: area5.blue, w: area5.white
+  },
+  {
+    r: area6.red, g: area6.green, b: area6.blue, w: area6.white
+  },
+  {
+    r: area7.red, g: area7.green, b: area7.blue, w: area7.white
+  },
+  {
+    r: area8.red, g: area8.green, b: area8.blue, w: area8.white
+  },
+  {
+    r: area9.red, g: area9.green, b: area9.blue, w: area9.white
+  },
+]
+}
 })
