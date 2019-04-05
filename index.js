@@ -1,4 +1,5 @@
-const getPixels = require("get-pixels")
+const getPixels = require("get-pixels");
+const gm = require('gm');
 
 const img = "https://upload.wikimedia.org/wikipedia/commons/8/8a/LGBT_Rainbow_Flag.png"
 
@@ -38,25 +39,25 @@ for (let i = 3; i < grid.length; i += 4) {
  allWhite.push(grid[i])
 }
 
-const red = allRed.reduce((acc, val) => {
+const avgRed = allRed.reduce((acc, val) => {
  acc += val;
  return acc;
 }, 0) / allRed.length;
-const green = allGreen.reduce((acc, val) => {
+const avgGreen = allGreen.reduce((acc, val) => {
  acc += val;
  return acc;
 }, 0) / allGreen.length;
-const blue = allBlue.reduce((acc, val) => {
+const avgBlue = allBlue.reduce((acc, val) => {
  acc += val;
  return acc;
 }, 0) / allBlue.length;
-const white = allWhite.reduce((acc, val) => {
+const avgWhite = allWhite.reduce((acc, val) => {
  acc += val;
  return acc;
 }, 0) / allWhite.length;
 
 return {
-    r: red, g: green, b: blue, w: white
+    r: avgRed, g: avgGreen, b: avgBlue, w: avgWhite
     }
 }
 
