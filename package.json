@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/nc-kdevs/image-testing#readme",
   "dependencies": {
-    "get-pixels": "^3.3.2"
+    "get-pixels": "^3.3.2",
+    "image-size": "^0.7.3"
   }
 }
